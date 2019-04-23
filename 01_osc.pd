@@ -4,7 +4,7 @@
 #X msg 233 51 500;
 #X msg 278 48 1000;
 #X obj 120 96 metro 250;
-#X obj 79 52 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 79 52 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X obj 119 136 f, f 4;
 #X obj 179 137 + 1;
@@ -23,11 +23,11 @@
 #X msg 395 332 72;
 #X obj 118 385 mtof;
 #X floatatom 172 406 5 0 0 0 - - -;
-#X obj 105 430 phasor~;
 #X obj 102 470 dac~;
 #X msg 642 463 \; pd dsp \$1;
 #X obj 643 402 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
+#X obj 105 430 osc~;
 #X connect 0 0 4 1;
 #X connect 1 0 4 1;
 #X connect 2 0 4 1;
@@ -57,7 +57,7 @@
 #X connect 17 0 20 0;
 #X connect 18 0 20 0;
 #X connect 19 0 20 0;
-#X connect 20 0 22 0;
-#X connect 22 0 23 0;
-#X connect 22 0 23 1;
-#X connect 25 0 24 0;
+#X connect 20 0 25 0;
+#X connect 24 0 23 0;
+#X connect 25 0 22 0;
+#X connect 25 0 22 1;
